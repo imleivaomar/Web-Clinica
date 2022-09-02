@@ -1,0 +1,61 @@
+/* Colores */
+:root{
+    --cFondo: rgb(252, 244, 215);
+    --cCard: rgb(93, 131, 96);
+    --cEnfasis: rgb(42, 44, 36);
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /*DISEÑO*/
+    background-color: var(--cFondo);
+}
+
+.card{
+    /*DISEÑO*/
+    background-color: var(--cCard);
+    /*DISPOSICION*/
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.card-title{
+    /*DISEÑO*/
+    font-size: 30px;
+}
+.card-text{
+    /*DISEÑO*/
+    font-size: 20px;
+}
+
+.title{
+    /*DISEÑO*/
+    font-size: 30px;
+}
+
+.text{
+    /*DISEÑO*/
+    font-size: 20px;
+}
+
+.btn-turno{
+    /*DISEÑO*/
+    background-color: var(--cEnfasis);
+    font-size: 20px;
+    color: aliceblue;
+    /*DISPOSICION*/
+    height: 100px;
+    width: 250px;
+}
+.btn-turno:hover{
+    /*DISEÑO*/
+    background-color: var(--cFondo);
+    color:black;
+
+}
