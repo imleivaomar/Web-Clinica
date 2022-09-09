@@ -115,7 +115,6 @@ body{
 .btn1:hover::before{
     top: -30px;
 }
-
 .btn1:hover{
         /*DISEÑO*/
     background: linear-gradient(180deg,#ffffff,#ffffff);
@@ -127,10 +126,6 @@ body{
 	padding: 14.4px 28.8px;
 	align-self: flex-end;
 }
-
-/*BOTON DISEÑO 2*/
-
-
 
 /* menu */
 
