@@ -1,2 +1,2 @@
-# Web-Clinica
-Este Repo corresponde a la segunda presentacion de Proyectos de ROLLINGCODESCHOOL.
+# Web Clinica!
+Este es un proyecto elaborado por alumnos de la carrera FullStack Web de Rolling Code School.
