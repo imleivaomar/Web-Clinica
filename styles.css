@@ -116,22 +116,6 @@ body{
     top: -30px;
 }
 
-.btn1:hover{
-        /*DISEÑO*/
-    background: linear-gradient(180deg,#ffffff,#ffffff);
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 48px;
-	font-size: 19.2px;
-	letter-spacing: 1.6px;
-    /*DISPOSCION*/
-	padding: 14.4px 28.8px;
-	align-self: flex-end;
-}
-
-/*BOTON DISEÑO 2*/
-
-
-
 /* menu */
 
 #menu ul {
