@@ -116,21 +116,82 @@ body{
     top: -30px;
 }
 
-/*
-.btn1:hover{
-        /*DISEÑO*/
-    background: linear-gradient(180deg,#ffffff,#ffffff);
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	border-radius: 48px;
-	font-size: 19.2px;
-	letter-spacing: 1.6px;
-    /*DISPOSCION*/
-	padding: 14.4px 28.8px;
-	align-self: flex-end;
-}
-*/
-/*BOTON DISEÑO 2*/
+/* menu */
 
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+
+/* items del menu */
+
+#menu ul li {
+    background-color:rgb(93, 131, 96);
+    }
+
+
+   /* enlaces del menu */
+
+   #menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+   /* items del menu */
+
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+
+   /* efecto al pasar el ratón por los items del menu */
+
+   #menu ul li:hover {
+    background:rgb(255, 58, 32);
+}
+
+/* menu desplegable */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+
+   /* items del menu desplegable */
+
+#menu ul ul li {
+    float:none;
+    width:150px
+}
+
+   /* enlaces de los items del menu desplegable */
+
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+}
+
+   /* items del menu desplegable al pasar el ratón */
+
+#menu ul li:hover > ul {
+    display:block;
+}
 
 /*MEDIA QUERIES*/
 @media (max-width: 1030px) {
@@ -147,3 +208,13 @@ body{
 		height:auto;
 	}
 }
+
+
+
+
+
+
+
+
+
+
