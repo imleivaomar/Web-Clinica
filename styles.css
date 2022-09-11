@@ -1,10 +1,13 @@
-/* Colores */
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* colores */
 :root{
     --background: rgb(245, 243, 236);
     --cBackgrdCard: rgb(237, 232, 215);
 }
 
-/* Normalize */
+/* normalize */
 *{
     border: none;
     box-sizing: border-box;
@@ -12,9 +15,10 @@
     margin: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
-/*BODY*/
+/*body*/
 body{
     background-color: var(--background);
 }
@@ -25,8 +29,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.title{
-	font-size: 30px;
+.title h2{
+	font-size: 50px;
     letter-spacing: 1.6px;
     text-transform: uppercase;
 }
@@ -34,9 +38,11 @@ body{
 	font-size: 30px;
     letter-spacing: 1.6px;
     text-transform: uppercase;
-    max-width: 500px;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-/* CARDS */
+/* cards */
         /* DISEÑO*/
         /* DISPOSICION*/
 .container{
@@ -48,17 +54,20 @@ body{
 }
 
 .card {
-    /*DISEÑO*/
+    /*diseño*/
 	background-color: var(--cBackgrdCard);
 	border-radius: 14px;
 	box-shadow: 0 14px 14px rgba(0, 0, 0, 0.2);
 	margin: 8px;
-	width: 480px;
-	height: 304px;
 
-    /* DISPOSICION*/
+    /*disposicion*/
 	display: flex;	
 	overflow: hidden;
+}
+
+.card .left-column img{
+    width: auto;
+    height: 300px;
 }
 
 .card h6 {
@@ -68,8 +77,10 @@ body{
 }
 
 .card  h2 {
+    font-weight: bolder;
 	letter-spacing: 1.6px;
 	margin: 16px 0;
+    font-size: 30px;
 }
 
 .left-column {	
@@ -97,15 +108,15 @@ body{
 }
 
 
-/*BOTON*/
+/*boton turno*/
 .btn1 {
-    /*DISEÑO*/
-    background: linear-gradient(180deg,#45c5e8,#5efbc9);
+    /*diseño*/
+    background: linear-gradient(180deg,#daf5a9,#d0fdda);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     border-radius: 48px;
     font-size: 19.2px;
     letter-spacing: 1.6px;
-    /*DISPOSCION*/
+    /*disposicion*/
     padding: 12.8px 24px;
     align-self: flex-end;
 }
@@ -116,61 +127,89 @@ body{
     top: -30px;
 }
 
-/* menu */
+/* header */
 
-#menu ul {
-    list-style:none;
-    margin:0;
-    padding:0;
+.header{
+    background-color: var(--cBackgrdCard);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+.header .nav-links li a:hover{
+    color: #4f5731;
+    
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: #060704;
+    padding: 9px 25px;
+    background: #45c5e8;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header .btn button:hover{
+    background-color: #45c5e8;
+    transform: scale(1.1);
 }
 
 
-/* items del menu */
 
-#menu ul li {
-    background-color:rgb(93, 131, 96);
-    }
-
-
-   /* enlaces del menu */
-
-   #menu ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-   /* items del menu */
-
-   #menu ul li {
-    position:relative;
-    float:left;
-    margin:0;
-    padding:0;
-}
-
-
-   /* efecto al pasar el ratón por los items del menu */
-
-   #menu ul li:hover {
-    background:rgb(255, 58, 32);
-}
 
 /* menu desplegable */
 
 #menu ul ul {
     display:none;
     position:absolute;
+    background-color: var(--background);
     top:100%;
-    left:0;
-    background:#eee;
-    padding:0;
+    transition: all 0.3s ease;
+}
+
+#menu ul ul:hover{
+    transition: all 0.3s;
 }
 
    /* items del menu desplegable */
@@ -178,6 +217,7 @@ body{
 #menu ul ul li {
     float:none;
     width:150px
+    transition: all 0.3s;
 }
 
    /* enlaces de los items del menu desplegable */
@@ -185,13 +225,18 @@ body{
 #menu ul ul a {
     line-height:120%;
     padding:10px 15px;
+    transition: all 0.3s;
 }
 
    /* items del menu desplegable al pasar el ratón */
 
 #menu ul li:hover > ul {
     display:block;
+    transition: all 0.3s;
 }
+
+
+
 
 /*MEDIA QUERIES*/
 @media (max-width: 1030px) {
@@ -207,6 +252,9 @@ body{
 		align-items: center;
 		height:auto;
 	}
+    .header{
+        max-width: 500px;
+    }
 }
 
 
