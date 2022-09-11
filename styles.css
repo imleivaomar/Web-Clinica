@@ -126,7 +126,6 @@ body{
 .btn1:hover::before{
     top: -30px;
 }
-
 /* header */
 
 .header{
@@ -171,7 +170,6 @@ body{
     color: black;
     text-decoration: none;
     transition: all 0.3s;
-
 }
 
 .header .nav-links li a:hover{
@@ -252,17 +250,3 @@ body{
 		align-items: center;
 		height:auto;
 	}
-    .header{
-        max-width: 500px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
